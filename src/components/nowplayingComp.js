@@ -2,6 +2,13 @@ import React from "react";
 // import Times from "./timesComp.js";
 
 class NowPlayingComp extends React.Component {
+   getShow() {
+    return this.props.item.showtimes.map((item, index) => {
+      return <li className="times" key={item.formattedTime + index}> 
+          {item.formattedTime}
+      </li>
+    })
+   }
     render() {
 
         return (
@@ -21,8 +28,8 @@ class NowPlayingComp extends React.Component {
                     </ul>
 
                     <ul className="pull-left">
- <li className="times">{this.props.item.showtimes.formattedTime}</li>
-                      <li className="times">7:00</li>
+ {this.getShow()}
+                     
                     </ul>
 
                     <ul className="pull-left">

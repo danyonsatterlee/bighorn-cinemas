@@ -3,12 +3,12 @@ import React from "react";
 class Prices extends React.Component {
     render() {
         return (
-
-            <div className="row special " id="pricing">
-                <div className="col-sm-12">
+<div id="pricing">
+            <div className="row" >
+              
                     <h1 className="now-playing text-center">Pricing</h1>
                     <hr/>
-                        <div className="row">
+              
                             <div className="col-md-4 col-md-offset-2 col-sm-12 ">
 
                                 <h3 className="pricing-list text-center">2D Ticket Pricing</h3>
@@ -53,8 +53,9 @@ class Prices extends React.Component {
 
                             </div>
                         </div>
-                    </div>
-                </div>
+                        </div>
+                
+           
               
                 );
     }
