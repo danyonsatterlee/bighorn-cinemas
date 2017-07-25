@@ -21,13 +21,13 @@ class NowPlayingComp extends React.Component {
                 </div>
                 <div className="col-sm-12 col-md-2 pull-left top">
                     <h2 >{this.props.item.movie.name}</h2>
-                    <ul className="pull-left">
+                    <ul >
                         <li className="info">{this.props.item.movie.lengthFriendly}</li>
                         <li className="info">|</li>
                         <li className="info">{this.props.item.movie.rating}</li>
                     </ul>
 
-                    <ul className="pull-left">
+                    <ul >
  {this.getShow()}
                      
                     </ul>
@@ -45,6 +45,7 @@ class NowPlayingComp extends React.Component {
 
                 </div>
             </div>
+            
 
         );
     }

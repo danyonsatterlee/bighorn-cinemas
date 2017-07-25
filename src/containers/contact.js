@@ -22,7 +22,7 @@ class Contact extends React.Component {
                         <div className="col-md-4 col-md-offset-2 col-sm-12 ">
 
                             <h3 className="pricing-list text-center">Phone</h3>
-                            <div className="prices-div center-block">
+                            <div className="phone-div center-block">
                                 <p>Movie Line
                                     <span className="pull-right">(307) 587-8001</span>
                                 </p>

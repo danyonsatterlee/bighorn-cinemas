@@ -6,27 +6,28 @@ import {bindActionCreators} from "redux";
 import * as actionCreators from "../actions/"
 import ScheduleMap from "../components/scheduleMap.js";
 
+class ScheduleCon extends React.Component {
+  componentWillMount() {
+    this
+      .props
+      .loadData();
 
-    class ScheduleCon extends React.Component{
-           componentWillMount(){
-        this.props.loadData();
-        
-    }
- 
-    render(){
+  }
 
-    
-        return(
-         <div className="row" id="schedule">
-           <h1 className="text-center now-playing">Schedule</h1>
-            <hr/>
-            <ScheduleMap items={this.props.items}/>
+  render() {
 
+    return (
+      <div className="row" id="schedule">
+        <h1 className="text-center now-playing">Schedule</h1>
+        <hr/>
+        <div class="calendar">
+          <ScheduleMap days ={this.props.days} items={this.props.items}/>
+
+        </div>
       </div>
-               
 
-        );
-    } 
+    );
+  }
 }
 
 const mapStateToProps = (state) => {
@@ -37,4 +38,4 @@ const mapDispatchersToProps = (dispatch) => {
   return bindActionCreators(actionCreators, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchersToProps)(ScheduleCon );
+export default connect(mapStateToProps, mapDispatchersToProps)(ScheduleCon);
