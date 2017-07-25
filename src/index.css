@@ -1,0 +1,405 @@
+* {
+  box-sizing: border-box;
+  color: white;
+
+}
+
+body{
+  background-color: black !important;
+  width: 100%;
+  margin: 0%;
+
+}
+
+/*NAVBAR*/
+.navbar {
+  text-transform: uppercase;
+  overflow: hidden;
+  background-color:rgba(51.7%, 53.5%, 55.4%, 0.3);
+  border:none;
+  color:white !important;
+
+}
+.navbar-toggle{
+  color:white !important;
+}
+.navbar li a {
+  color: white !important;
+}
+
+.nav li a:hover {
+  background-color: rgb(215, 65, 78) !important;
+  border-radius: 30px;
+
+
+}
+
+.nav li a:focus{
+  background-color: transparent !important;
+
+
+}
+
+.nav li a:visted {
+  background-color: transparent !important;
+  opacity:0;
+}
+
+.navbar h3{
+  margin-top: 0px !important;
+  padding-top: 15px;
+  margin-bottom:0px;
+}
+
+
+
+.carousel-caption {
+  margin-bottom: 100px;
+}
+
+.carousel-inner>.item {
+  max-height: 600px;
+}
+
+.carousel-caption {
+  /*right:3%;*/
+  top: 60%;
+  right: auto;
+
+  left: 2% !important;
+  text-align: left !important;
+  height: 100%;
+  max-width: 1000px;
+  padding: 5px;
+
+}
+
+.carousel-caption h1 {
+  font-size: 5em;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+
+.carousel-caption h3 {
+  font-size: 3em;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.icon-bar {
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+table {
+  display: inline-block;
+}
+
+td {
+  border-top: none !important;
+}
+
+th {
+  border-top: none !important;
+}
+
+.now-playing {
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  /*text-align: center;*/
+  /*margin-top: 10vh;*/
+  font-size: 5em;
+}
+
+#now-playing {
+  background: url(/img/now-showing-bk2.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.info {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  /*text-align: center !important;*/
+}
+
+.info a {
+  color: white;
+}
+
+.info :hover {
+  color: rgb(215, 65, 78);
+}
+
+.times {
+
+  display: inline-block;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: .3em;
+  border-radius: 45px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-left: 1em;
+  margin-top: .5em;
+}
+ ul {
+    text-align: center;
+    padding-left: 0px !important;
+    float: left;
+    display: inline;
+  }
+.poster {
+  max-height: 375px;
+  -webkit-box-shadow: 61px 54px 283px -79px rgba(124, 124, 125, 1);
+  -moz-box-shadow: 61px 54px 283px -79px rgba(124, 124, 125, 1);
+  box-shadow: 61px 54px 283px -79px rgba(124, 124, 125, 1);
+  display: inline-block !important;
+
+
+}
+
+.top{
+  margin-top: 30px;
+}
+
+
+
+ h2 {
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase !important;
+  color: white;
+
+
+
+  /*padding-left:  2em;*/
+}
+
+
+/*CALENDAR*/
+
+.black-bk {
+  background-color: #000;
+
+
+
+}
+
+.day {
+  font-family: 'Droid Sans', sans-serif;
+  width: 13.2%;
+  float: left;
+  padding: 1em;
+  border-left: .1px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+  border-color: rgb(214, 214, 214);
+  border-right: .1;
+  border-style: solid;
+  margin: .5em;
+}
+
+
+/*.fixer{
+  float:left;
+}*/
+
+
+
+@media screen and (max-width: 1024px) {
+  .carousel-caption {
+    /*right:3%;*/
+    top: 30%;
+    right: auto;
+
+    left: 2% !important;
+    text-align: left !important;
+    height: 100%;
+    max-width: 1000px;
+    padding: 5px;
+
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .day {
+    min-width: 30%;
+  }
+ ul {
+    text-align: center;
+    padding-left: 0px !important;
+    float: left;
+    display: inline;
+  }
+  .fixer {
+    display: inline;
+    width: 100%;
+  }
+  .showing h2 {
+    text-align: center !important;
+    display: block;
+  }
+  .poster {
+    display: block !important;
+    margin: 0px;
+    text-align: center !important;
+    min-height: 500px;
+  }
+  .times {
+  
+ 
+    display:block;
+    width: 100%;
+  }
+  .carousel-caption {
+    /*right:3%;*/
+    top: 30%;
+    right: auto;
+
+    left: 2% !important;
+    text-align: left !important;
+    height: 100%;
+    max-width: 1000px;
+    padding: 5px;
+
+  }
+  /*.carousel-caption h1 {
+    font-size: 5em;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+
+  .carousel-caption h3 {
+    font-size: 3em;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+  }*/
+}
+
+@media screen and (max-width: 375px) {
+  .day {
+    min-width: 100%;
+  }
+}
+
+.day-name {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: rgb(215, 65, 78);
+  margin: 0;
+  margin-bottom: -.1em;
+}
+
+.day-date {
+  margin: 0;
+  margin-bottom: 1em;
+  font-size: .8em;
+  color: #666;
+}
+
+.day-item {
+  background: rgb(214, 214, 214);
+  padding: .5em;
+  margin-bottom: 1em;
+  font-size: .8em;
+  height: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.day-item-title, .day-item-time, .day-item-description {
+  margin: 0;
+}
+
+.day-item-title {
+  color: rgb(215, 65, 78);
+}
+
+.day-item-time {
+  color: #aaa;
+  font-weight: bold;
+}
+
+#pricing {
+  background: url(/img/now-showing-bk2.jpg);
+  min-height: 500px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(215, 65, 78);
+  padding-bottom: 4em;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+
+}
+
+#pricing  .row .special {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+
+.pricing-list {
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.prices-div {
+  width: 100%;
+    display: inline-block;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 600;
+
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: .3em;
+  border-radius: 45px;
+  padding-left: 7em;
+  padding-right: 7em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+
+
+.address-div {
+  width: 30%;
+}
